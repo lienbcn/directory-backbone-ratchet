@@ -19,9 +19,10 @@ app.models.EmployeeCollection = Backbone.Collection.extend({
 
     model: app.models.Employee,
 
-    sync: function(method, model, options) {
+    sync: function(method, model, options) { //executed when call to fetch
         if (method === "read") {
             app.adapters.employee.findByName(options.data.name).done(function (data) {
+                //data is a simple array of objects
                 options.success(data);
             });
         }

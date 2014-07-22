@@ -71,3 +71,11 @@ ul {
     background: transparent url(images/ic_action_location.png);
     background-repeat: no-repeat;
 }
+
+
+
+
+.title.clsLeft{
+    width: auto;
+    margin-left: 10px;
+}
