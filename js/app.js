@@ -14,3 +14,10 @@ $(document).on("ready", function () {
             Backbone.history.start();
         });
 });
+
+
+$(function(){
+    $(window).resize(function() {
+        window.location.reload();
+    });
+});
